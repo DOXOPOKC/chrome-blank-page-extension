@@ -1,0 +1,30 @@
+.visited-menu-drowdown {
+  visibility: hidden;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 0;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #333333;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  opacity: 0;
+  transform: scale(0.9);
+  transform-origin: top right;
+  transition: all 0.2s;
+}
+
+.visited-menu-drowdown-open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.visited-menu-drowdown-item {
+  width: 100%;
+  padding: 0.5em 1.5rem;
+}
+
+.visited-menu-drowdown-item:hover, .visited-menu-drowdown-item:focus {
+  background-color: #eeeeee;
+}

@@ -1,0 +1,14 @@
+{
+  "author": "doxopokc",
+  "chrome_url_overrides": {
+     "newtab": "index.html"
+  },
+  "permissions": ["favicon", "storage", "topSites"],
+  "description": "Replace your New tab page with a blank one.",
+  "homepage_url": "https://github.com/doxopokc/chrome-blank-page-extension",
+  "incognito": "not_allowed",
+  "manifest_version": 3,
+  "name": "Blank New Tab",
+  "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+  "version": "1.1.0"
+}

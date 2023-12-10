@@ -1,0 +1,147 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: none;
+  color: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  text-shadow: inherit;
+  -webkit-text-stroke: 0 currentColor;
+}
+
+img, svg, video, audio, label, input, textarea, select, button {
+  display: block;
+}
+
+button, [aria-controls] {
+  cursor: pointer;
+}
+
+.new-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.most-visited {
+    margin: 45px 0;
+    width: 100%;
+    text-align: -webkit-center;
+    user-select: none;
+}
+
+.most-visited-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    line-height: normal;
+    margin: 0;
+    max-width: calc(112px * 5); 
+    opacity: 1;
+    position: static;
+    text-align: -webkit-auto;
+    transition: opacity 1s;
+    user-select: none;
+    font-size: 0;
+}
+
+.visited-container {
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 112px;
+  margin-bottom: 16px;
+  opacity: 1;
+  position: relative;
+  transition-property: background-color, border-color, box-shadow, opacity, text-shadow;
+  width: 112px;
+  outline: 0;
+}
+
+.visited-container:hover {
+  background-color: rgba(33, 32, 36, 0.06);
+  transition: all .7s;
+}
+
+.visited-container:hover .visited-menu {
+  opacity: 1;
+  -webkit-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+.visited-container a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 16px 8px;
+  outline: 0;
+}
+
+.visited-inner {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.visited-icon {
+  margin-bottom: 16px;
+}
+
+.visited-icon img {
+  height: 48px;
+  width: 48px;
+}
+
+.visited-title {
+  color: rgba(33, 32, 36, 0.86);
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 12px;;
+  font-weight: 500;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  width: 96px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.visited-menu {
+  background-color: transparent;
+  opacity: 0;
+  border: none;
+  cursor: pointer;
+  margin: 4px 2px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  transition-property: background-color;
+}
+
+.visited-menu:hover .visited-more-icon, .visited-menu:focus .visited-more-icon {
+  filter: contrast(0.5);
+  background-color: #00000014;
+  border-radius: 50%;
+  transition: all .7s;
+}
+
+.visited-more-icon {
+  filter: contrast(0.2);
+}
